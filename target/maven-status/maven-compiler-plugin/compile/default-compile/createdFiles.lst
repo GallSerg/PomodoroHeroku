@@ -1,0 +1,5 @@
+telegram\MyTelegramBot.class
+Main.class
+telegram\commands\BeginCommand.class
+telegram\commands\HelpCommand.class
+telegram\commands\ServiceCommand.class
