@@ -77,6 +77,7 @@ public class MyTelegramBot extends TelegramLongPollingCommandBot {
             String message = "Я не понимаю";
             sendMessage(message);
         }
+        BeginCommand.isStart = false;
     }
 
     private void sendMessage(String messageText) {
