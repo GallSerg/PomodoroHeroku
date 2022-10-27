@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>TelegramPomodoroHeroku</artifactId>
+    <artifactId>PomodoroHeroku</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -30,7 +30,7 @@
     </dependencies>
 
     <build>
-        <finalName>TelegramPomodoroHeroku</finalName>
+        <finalName>PomodoroHeroku</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
