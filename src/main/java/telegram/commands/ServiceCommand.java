@@ -4,6 +4,7 @@ import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import telegram.MyTelegramBot;
 
 abstract class ServiceCommand extends BotCommand {
 
@@ -12,6 +13,7 @@ abstract class ServiceCommand extends BotCommand {
     }
 
     void sendAnswer (AbsSender absSender, Long chatId, String text){
+        MyTelegramBot.chatId = chatId.toString();
         SendMessage message= new SendMessage();
         message.enableMarkdown(true);
         message.setChatId(chatId.toString());
